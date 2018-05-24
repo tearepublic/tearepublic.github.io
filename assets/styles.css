@@ -1,0 +1,470 @@
+/*----------------------------------------
+COLOUR PALETTE:
+
+heading: #36434d;
+sub-heading: #8d8c8e;
+text: #7d7d7d;
+button-blue: #0e83dc;
+footer: #494949;
+
+-----------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    color: #333; 
+    /*    border: 1px solid red;*/
+}
+
+body{
+    /*    font-family: 'Droid Serif', serif;  good for heading*/
+    font-family: 'Nunito', sans-serif; 
+
+
+    font-size: 16px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.625;
+
+}
+
+h1{
+    font-size: 44px;
+    line-height: 1.25;
+}
+h1,h2{
+    font-weight: 700;
+}
+h2{
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 21px;
+}
+p{
+    margin: 0 0 13px;
+    letter-spacing: 0.4px;
+}
+
+
+.center{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    /*    justify-content: center;*/
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.center-text{
+    text-align: center;
+}
+.row:after {
+    clear: both;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.sub-heading{
+    font-size: 26px;
+    color: rgba(51, 51, 51, 0.78);
+}
+
+
+/*----------------------------------------
+HEADER
+-----------------------------------------*/
+.navbar .icon {
+    display: none;
+}
+.fa-user{
+    padding-right: 6px;
+}
+header{
+    height: 100vh;
+    background-image: url(img/tea-republic-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section{
+    padding: 100px 0;
+}
+header .container{
+    height: 100%;
+    position: relative;
+}
+.logo{
+    max-width: 185px;
+}
+.navbar{
+    margin: 30px 0;
+}
+.navbar-brand{
+    margin-top: -15px;
+    padding: 0;
+}
+.navbar-on-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -30px;
+
+}
+.navbar-on-right li{
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 0 20px;
+}
+.navbar ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; 
+
+}
+.input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:after{
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.btn-small{
+    padding: 8px 16px;
+}
+.btn-large{
+    padding: 12px 23px 12px 23px;
+    font-size: 21px;
+    margin-top: 30px;
+}
+.btn-large i{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+
+}
+.btn {
+    color: #fff !important;
+    text-decoration: none;
+    border: 1px solid rgb(109, 158, 76);
+    background-image: -webkit-linear-gradient(to bottom,#b2d233 0,#78b142 100%);
+    background-image: -o-linear-gradient(to bottom,#b2d233 0,#78b142 100%);
+    background-image: linear-gradient(to bottom,#b2d233 0,#78b142 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff66af36', endColorstr='#ff5d9f31', GradientType=0);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 -0.1em 0 #467825, 0 0 0 2px transparent;
+    box-shadow: inset 0 -0.1em 0 #467825, 0 0 0 2px transparent;
+
+}
+
+a.btn span,
+a.btn span:active,
+a.btn span:visited,
+a.btn span:after{
+    color: #fff !important;
+    border-color: transparent;
+    text-decoration: none;
+
+
+}
+a.btn:hover{
+    background-image: -webkit-linear-gradient(to bottom,#8ea926 0,#5d8a33 100%);
+    background-image: -o-linear-gradient(to bottom,#8ea926 0,#5d8a33 100%);
+    background-image: linear-gradient(to bottom,#8ea926 0,#5d8a33 100%);  
+}
+.btn-navbar{
+    padding: 10px 10px !important;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+.btn i{
+    color: #fff;
+}
+.vertical-middle{
+    vertical-align: middle;
+}
+h3.inline{
+    display: inline-block;
+}
+/*----------------------------------------
+HEADER
+-----------------------------------------*/
+header img{
+    max-width: 100%;
+}
+.home-hero{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+header .sub-heading{
+    margin-bottom: 20px;
+}
+.sticker{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 200px;
+}
+/*----------------------------------------
+HOW IT WORKS
+-----------------------------------------*/
+.tick-points-line{
+    padding: 10px;
+    border-top: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    max-width: 750px;
+    margin: 80px auto 0px auto;
+}
+.tick-point{
+    display: inline-block; 
+    margin: 0 20px; 
+}
+.tick-point i.fa.fa-check{
+    font-size: 25px;
+    margin-right: 7px;
+    background: -webkit-linear-gradient(#8ea926, #5d8a33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circle{
+    border: 1px solid #AAA;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.how-it-works img{
+    margin-top: 50px;
+}
+
+.how-it-works #first{
+    margin-left: 30px;
+}
+.how-it-works #third{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+/*----------------------------------------
+WHATS INSIDE THE BOX
+-----------------------------------------*/
+.whats-in-th-box{
+    margin-bottom: 100px;
+}
+.whats-in-th-box i.fa.fa-check-square-o{
+    font-size: 40px;
+    color: #78b142;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.whats-in-th-box ul{
+    margin: 20px 0;
+    padding: 0;
+}
+.whats-in-th-box ul li h3{
+    margin: 10px 0;
+}
+
+/*----------------------------------------
+TESTIMONIALS
+-----------------------------------------*/
+.customer-feedback{
+    height: 100%;
+    background-image: url(img/tea-hills.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 170px 0;
+}
+.customer-feedback h2{
+    margin-bottom: 100px;
+}
+.customer-feedback .testimonial{
+    background-color: #fff;
+    padding: 30px 15px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 44px -8px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 44px -8px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 44px -8px rgba(0,0,0,0.6);
+}
+.fa-star{
+    color: gold;
+    padding: 0px 2px;
+}
+.review-text{
+    margin-bottom: 30px;
+}
+.review-img{
+    margin-bottom: 7px;
+    width: 70px;
+}
+.review-name{
+    margin-bottom: 5px;
+}
+/*----------------------------------------
+FAQ
+-----------------------------------------*/
+
+.faq .accordion-question{
+    font-size: 22px;
+    margin: 40px 0;
+    display: block;
+}
+.faq .accordion-question i{
+    color: #337ab7;
+    font-size: 23px;
+    margin-right: 10px;
+}
+.faq-answer{
+    margin-top: 15px;
+}
+.faq .row:nth-child(2){
+    margin-bottom: 40px;
+}
+/*----------------------------------------
+Footer
+-----------------------------------------*/
+footer{
+    /*    background-color: #313131;*/
+    padding: 30px 0;
+    border-bottom: 35px solid #78b142;
+}
+footer a{
+    /*    color: #fff;*/
+}
+footer ul{
+    padding: 15px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 60%;
+    margin: 0 auto;
+}
+footer ul li{
+    display: inline-block;
+}
+/*----------------------------------------
+MEDIA QUERIES
+-----------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    h1{
+        font-size: 200%;
+    }
+
+    h3{
+         font-size: 110%;
+    }
+    .sub-heading, h2{
+        font-size: 150%;
+    }
+    header{
+        background-image: url(img/background-extra-small.jpg) !important;
+    }
+    .navbar-mobile {
+        clear: both;
+    }
+    .navbar-brand>img{
+        display: inline-block;
+    }
+    .navbar-mobile ul{
+        padding: 0;
+        text-align: center;
+
+    }
+    .navbar-mobile ul li{
+        display: inline-block;
+        text-align: center;
+    }
+    a.navbar-brand{
+        width: 100%;
+        display: block;
+        clear: both;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .home-hero{
+        background-color: rgba(255, 255, 255, 0.53);
+        padding: 15px;
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin: 100px auto;
+        transform: none;
+
+    }
+
+    section{
+        padding: 60px 0;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .mob{
+        padding: 0 5%;
+        max-width: 580px;
+        width: 100%;
+    }
+
+    .customer-feedback{
+        padding: 70px 0;
+    }
+    .customer-feedback h2 {
+        margin-bottom: 50px;
+    }
+    .customer-feedback .col-sm-4{
+        margin-bottom: 60px;
+    }
+    .whats-in-th-box img{
+        width: 80%;
+
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    header{
+        background-image: url(img/background-smaller.jpg);
+    }
+    .js--wp-1 .col-sm-5:first-child{
+        padding-top: 0px;
+    }
+    .how-it-works img{
+        display: block;
+        margin: 30px auto !important;
+    }
+    .whats-in-th-box h2{
+        text-align: center;
+    }
+    .whats-in-th-box img{
+        margin-bottom: 40px;
+
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+}
